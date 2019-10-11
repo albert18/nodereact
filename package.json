@@ -20,5 +20,8 @@
   "homepage": "https://github.com/albert18/nodereact#readme",
   "devDependencies": {
     "nodemon": "^1.19.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
