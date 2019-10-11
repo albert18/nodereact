@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/albert18/nodereact/issues"
   },
-  "homepage": "https://github.com/albert18/nodereact#readme"
+  "homepage": "https://github.com/albert18/nodereact#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
 }
