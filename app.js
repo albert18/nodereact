@@ -10,9 +10,9 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use((req, res, next) => {
-    console.log('In another the middle ware')
-});
+// app.use((req, res, next) => {
+//     console.log('In another the middle ware TEST')
+// });
 
 const server = http.createServer(app);
 
