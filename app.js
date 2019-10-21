@@ -1,4 +1,4 @@
-const path = require('path');
+    const path = require('path');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -9,6 +9,7 @@ const shopRoutes = require('./routes/shop');
 const adminRoutes = require('./routes/admin');
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // using routes
 app.use('/admin', adminRoutes);
