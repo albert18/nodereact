@@ -5,14 +5,14 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
-const adminRoutes = require('./routes/admin');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // using routes
-app.use('/admin', adminRoutes);
+app.use('/admin', adminData.routes);
 app.use(shopRoutes);
 
 // Handling Error
